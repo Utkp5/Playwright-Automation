@@ -3,6 +3,7 @@ const {test} = require('@playwright/test');
 
 // In these 2 both are different by their writing but doing same thing
 //1. in 1st one we are writing 2 line extra to goto the specific page where as in 2nd onw we hve only written one to goto the specific page
+// to run one single file use this npx playwright test tests/login.spec.js --> path of file which u want to run
 
 test('Browser test', async({browser})=> {
 
@@ -20,3 +21,5 @@ test('Page playwright test', async({page})=> {
     await page.goto("https://demowebshop.tricentis.com/");
     await page.pause();
 })
+
+
